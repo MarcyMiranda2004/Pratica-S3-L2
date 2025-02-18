@@ -85,7 +85,7 @@
       */
 
       const changeTitle = function () {
-        const newTitle = document.getElementsByTagName("h1");
+        const newTitle = document.getElementsByTagName("h1"); //genera un array con al suo interno il titolo
         newTitle[0].innerText = "Helldivers 2: Guida ai Terminidi !";
       };
       changeTitle();
@@ -98,7 +98,7 @@
         const newClass = document.getElementsByTagName("h1");
         newClass[0].classList.add("myHeading");
       };
-
+      addClassToTitle();
       /* ESERCIZIO 3
          Scrivi una funzione che cambi il testo dei p figli di un div
         */
@@ -166,7 +166,7 @@
       const paintItGreen = function () {
         const newBgColor = document.getElementsByTagName("ul");
         for (let i = 0; i < newBgColor.length; i++) {
-          newBgColor[i].style.backgroundColor = "#ffe4c4";
+          newBgColor[i].style.backgroundColor = "#green";
         }
       };
       paintItGreen();
